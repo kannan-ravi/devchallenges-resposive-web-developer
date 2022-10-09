@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+
+/* || ROOT PART ASSIGN VARIABLE */
+:root {
+    --ff-montserrat: 'Montserrat', sans-serif;
+    --ff-playfair-display: 'Playfair Display', serif;
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+/* || RESET PART */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-montserrat);
+    margin: 0 .75rem; /*12px */
+}
+
+/* RECIPE HEADING */
+.recipe-heading {
+    font-family: var(--ff-playfair-display);
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.9994rem; /*31.9904px*/
+    font-weight: var(--fw-700);
+    margin: 2rem 0 0 0;
+}
+
+.icon-desription {
+    display: flex;
+    flex-direction: row;
+    margin-top: .75rem;
+
+}
+
+.dot-icon {
+    transform: rotate(90deg);
+    color: #C4C4C4;
+    height: 100%;
+    margin: 0 .75rem 0 0;
+    font-size: 1.125rem;
+}
+
+.description {
+    font-family: var(--ff-montserrat);
+    font-size: .75rem;
+    font-style: italic;
+    line-height: .9144rem;
+    font-weight: var(--fw-500);
+    color: #4F4F4F;
+    max-width: 37.5rem;
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: .75rem;
+    margin-top: .75rem;
+}
+
+
+/* || ICONS & SERVINGS & DURATION */
+.time-recipeContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.time {
+    display: block;
+}
+
+.servings {
+    display: flex;
+    padding: 1.5rem 0 0 0;
+}
+
+.restaurant-menu-icon {
+    color: #F2994A;
+    align-self: center;
+    font-size: 1.125rem;
+}
+
+.greyText {
+    text-transform: uppercase;
+    font-size: .5rem;
+    color: #BDBDBD;
+    font-weight: var(--fw-700);
+    font-family: var(--ff-montserrat);
+    line-height: .6094rem;
+}
+
+.servings12 {
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-500);
+    font-size: .625rem;
+    color: #F2994A;
+    line-height: .75rem;
+}
+
+.iconTextTime2 {
+    display: flex;
+    justify-content: start;
+}
+
+.icon-container {
+    display: flex;
+    /* background-color: #4F4F4F; */
+    margin: 1.25rem 3.75rem 0 0;
+}
+
+.total-time {
+    margin-right: 0;
+}
+
+.icon-container > span {
+    font-size: 1.125rem;
+    align-self: center;
+    margin-right: .3125rem;
+}
+
+.time {
+    font-family: var(--ff-montserrat);
+    font-size: .625rem;
+    line-height: .7619rem;
+    font-weight: 500;
+}
+
+/* || RECIPE CONTENT --> INGRIDIENT & INSTRUCTION */
+.recipeContent {
+    margin: 1.875rem 0 0 0;
+}
+
+.ingredients {
+    font-family: var(--ff-playfair-display);
+    font-weight: var(--fw-700);
+    font-size: 1.125rem;
+    line-height: 1.4994rem;
+}
+
+.ingredients-heading {
+    margin: .8125rem 0 0 0;
+    font-family: var(--ff-playfair-display);
+    font-weight: var(--fw-400);
+    line-height: 1.3331rem;
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+/* || DESIGNING CHECKBOX USING ::BEFORE FEATURE */
+label {
+    display: block;
+    position: relative;
+    padding-left: 2.625rem;
+    margin-bottom: .9375rem;
+    font-size: .875rem;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.background-span {
+    position: absolute;
+    width: 1.3125rem;
+    height: 1.3125rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    left: 0;
+    top: 0;
+}
+
+label input:hover~.background-span {
+    background-color: grey;
+}
+
+label input:checked~.background-span {
+    background-color: blue;
+}
+
+.background-span:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+label input:checked~.background-span:after {
+    display: block;
+}
+
+label .background-span:after {
+    left: 5px;
+    bottom: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+}
+
+.bolder {
+    font-weight: 700;
+}
+
+.single-checkbox-container {
+    display: flex;
+    background-color: lightcoral;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+
+.single-checkbox-container>label {
+    background-color: lightblue;
+    margin: 0 1rem;
+}
+
+.instruction-heading {
+    font-family: var(--ff-playfair-display);
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    line-height: 1.9994rem;
+    margin: 1.875rem 0 1.75rem 0;
+}
+
+/* || DESIGNING LIST NUMBER USING COUNTER RESET  */
+.ordered-list {
+    list-style: none;
+    position: relative;
+    padding-left: 3.9375rem;
+    counter-reset: list-number;
+}
+
+ol>li {
+    font-family: var(--ff-montserrat);
+    counter-increment: list-number;
+    font-size: 1rem;
+    margin-bottom: 1.5625rem;
+    line-height: 1.5rem;
+    font-weight: var(--fw-400);
+}
+
+ol>li::before {
+    content: counter(list-number);
+    background-color: #F2994A;
+    border-radius: .375rem;
+    position: absolute;
+    color: #fff;
+    height: 2.25rem;
+    width: 2.25rem;
+    text-align: center;
+    font-weight: var(--fw-700);
+    font-size: 1.5rem;
+    left: 0;
+    line-height: 1.1;
+    font-family: var(--ff-playfair-display);
+}
+
+.bolder-list {
+    font-weight: var(--fw-700);
+}
+
+/* || RECIPE SOURCE */
+.recipe-source {
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-400);
+    font-size: .75rem;
+    line-height: 1.125rem;
+    color: #BDBDBD;
+    margin-top: 1.625rem;
+}
+
+/* || FOOTER PART */
+footer > p {
+    font-family: var(--ff-montserrat);
+    font-size: .875rem;
+    font-weight: var(--fw-400);
+    color: #828282;
+    margin: 8.0625rem 0 1.5rem 0;
+    text-align: center;
+}
+
+footer > p > span {
+    font-weight: var(--fw-700);
+}
+
+
+/* || MEDIA QUERIES FOR ABOVE 539PX DISPLAY */
+@media (min-width: 539px) {
+    body {
+        margin: 0 3.75rem;
+    }
+    .recipe-heading {
+        font-size: 1.75rem;
+    }
+    .recipe-source {
+        padding-top: 3.5rem;
+        text-align: center;
+    }
+    br {
+        display: none;
+    }
+}
+
+/* || MEDIA QUERIES FOR ABOVE 768PX */
+@media (min-width: 768px) {
+    body{
+        margin: 0 7.5rem;
+    }
+}
+
+/* || MEDIA QUERIES FOR ABOVE 992PX */
+@media (min-width: 992px) {
+    body {
+        margin: 0 11.25rem;
+    }
+    .recipe-heading {
+        font-size: 2.125rem;
+    }
+}
+
+/* || MEDIA QUERIES FOR ABOVE 1200PX */
+@media (min-width: 1200px) {
+    body {
+        margin: 0 14.625rem;
+    }
+
+    .recipe-heading {
+        font-size: 3rem;
+        line-height: 3.9987rem;
+    }
+
+    .description {
+        margin-bottom: 1.9375rem;
+        font-size: .875rem;
+        line-height: 1.0669rem;
+    }
+
+    .time-recipeContent {
+        flex-direction: row-reverse;            
+    }
+
+    .alltime {
+        box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1);
+        background: #fff;
+        border-radius: .75rem;
+        margin-top: 3rem;
+        max-width: 13.5rem;
+        max-height: 22.9375rem;
+        padding: 2.8125rem 3.1875rem 0 3.0625rem;
+    }
+    
+    .iconTextTime2 {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .greyText {
+        font-size: .625rem;
+        line-height: .7619rem;
+    }
+
+    .servings12{
+        font-size: .875rem;
+        line-height: 1.0669rem;
+    }
+
+    .time {
+        font-size: .875rem;
+        line-height:1.0669rem;
+        min-width: 5rem
+    }
+
+    .icon-container > span {
+        font-size: 1.5rem;
+    }
+
+    .restaurant-menu-icon {
+        font-size: 1.5rem;
+    }
+
+    .icon-container {
+        margin-bottom: 1.25rem;
+    }
+}
