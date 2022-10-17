@@ -1,0 +1,293 @@
+/* || IMPORT MONTSERRAT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+/* || DECLARE VARIABLE */
+:root {
+    --ff: 'Montserrat', sans-serif;
+
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+/* || CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff);
+    font-weight: var(--fw-600);
+    padding: 0 12px;
+}
+
+/* || PROFILE CONTAINER */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profiler-image {
+    width: 101px;
+    height: auto;
+
+    margin-top: 30px;
+    margin-bottom: 11.24px;
+    
+    border-radius: 16px;
+}
+
+.profiler-name {
+    font-size: 14px;
+    line-height: 17.07px;
+    
+    color: #4E5150;   
+}
+
+.profiler-location {
+    font-size: 10px;
+    line-height: 12px;
+    
+    color: #A9A9A9;
+    margin: 4px 0 12px 0;
+}
+
+/* || SOCIAL CONTAINER */
+.social-container {
+    display: flex;
+    gap: 12px;
+}
+
+.subsocial-container {
+    border-radius: 12px;
+    background-color: #E5E5E5;
+    width: 78px;
+    height: 52px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.subsocial-container:hover {
+    background-color: #BEC1C6;
+}
+
+.subsocial-container:hover .word {
+    color: #4C5661;
+}
+
+.count {
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.word {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #BDBDBD;
+    transition: all 0.3s ease-in-out;
+}
+
+/* || IMAGE CONTAINER */
+.image-container {
+    margin-top: 39px;
+    margin-bottom: 44px;
+
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        'photo1 photo2 photo2'
+        'photo3 photo3 photo4'
+        'photo5 photo6 photo4';
+}
+
+.picture {
+    width: 100%;
+    border-radius: 12px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.picture:hover {
+    transform: scale(1.099);
+}
+.picture.one {
+    grid-area: photo1;
+}
+
+.picture.two {
+    grid-area: photo2;
+}
+
+.picture.three {
+    grid-area: photo3;
+}
+
+.picture.four {
+    grid-area: photo4;
+}
+
+.picture.five {
+    grid-area: photo5;
+}
+
+.picture.six {
+    grid-area: photo6;
+}
+
+/* || FOOTER */
+footer {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+
+    margin-bottom: 24px;
+    text-align: center;
+    color: #B9BDCF;
+}
+
+footer a {
+    color: #B9BDCF;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    
+}
+footer a:hover {
+    color: #292929;
+}
+
+/* || MEDIA QUERY FOR ABOVE 520PX SCREEN */
+@media (min-width: 520px) {
+    body {
+        padding: 0 52px;
+    }
+
+    .profiler-image {
+        width: 116px;
+
+        margin-top: 35px;
+        margin-bottom: 13px;
+    }
+
+    .profiler-name {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+/* || MEDIA QUERY FOR ABOVE 768PX SCREEN */
+@media (min-width: 768px) {
+    body {
+        padding: 0 104px;
+    }
+
+    .profiler-image {
+        width: 128px;
+
+        margin-top: 42px;
+        margin-bottom: 14px;
+    }
+
+    .profiler-name {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .profiler-location {
+        font-size: 13px;
+        line-height: 14.5px;
+    }
+
+    .social-container {
+        gap: 18px;
+    }
+
+    .subsocial-container {
+        width: 88px;
+        height: 57px;
+
+        padding-top: 12.5px;
+    }
+
+    .count {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .word {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .image-container {
+        margin-top: 52px;
+        margin-bottom: 88px;
+    }
+}
+
+/* || MEDIA QUERY FOR ABOVE 992PX SCREEN */
+@media (min-width: 992px) {
+    body {
+        padding: 0 184px;
+    }
+
+    .profiler-image {
+        width: 140px;
+    }
+}
+
+/* || MEDIA QUERY FOR ABOVE 1200PX */
+@media (min-width: 1200px) {
+    body {
+        padding: 0 235px;
+    }
+    
+    .profiler-image {
+        width: 156px;
+
+        margin-top: 60px;
+        margin-bottom: 16px;
+    }
+
+    .profiler-name {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .profiler-location {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .social-container {
+        gap: 24px;
+    }
+
+    .subsocial-container {
+        width: 100px;
+        height: 67px;
+
+        padding-top: 15px;
+    }
+
+    .count {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .word {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .image-container {
+        margin-top: 64px;
+        margin-bottom: 134px;
+
+        gap: 32px;
+    }
+}
