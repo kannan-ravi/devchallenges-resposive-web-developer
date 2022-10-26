@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="icon" type="image/x-icon" href="src/devchallenges.png">
+    <link rel="stylesheet" href="assests/style.css">
+    <title>Checkout Page || devChallenges.io</title>
+</head>
+
+<body>
+    <!--*|| HEADING -->
+    <h1 class="heading">Checkout</h1>
+
+    <!-- *|| CONTAINER -->
+    <section class="container">
+        <!-- *|| ITEM CONTAINER-->
+        <div class="item-container">
+            <!-- *|| FIRST ITEM-->
+            <div class="item">
+                <img src="src/photo1.png" alt="Backpack Picture" class="image">
+                <div class="item-detail">
+                    <p class="product-name">Vintage Backbag</p>
+                    <p class="product-price" id="bag-offer-price">$54.99 <span class="o-price" id="bag-original-price"><s>$94.99</s></span></p>
+                    <div class="quantity-container">
+                        <span class="material-symbols-outlined icon" id="bag-plus">add</span>
+                        <!-- <p class="icon">+</p> -->
+                        <p class="quantity-detail" id="bag-quantity">1</p>
+                        <span class="material-symbols-outlined icon" id="bag-minus">remove</span>
+                        <!-- <p class="icon">-</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- *|| SECOND ITEM-->
+            <div class="item">
+                <img src="src/photo2.png" alt="Shoes Picture" class="image">
+                <div class="item-detail">
+                    <p class="product-name">Levi Shoes</p>
+                    <p class="product-price" id="shoe-offer-price">$74.99 <span class="o-price" id="shoe-original-price"><s>$124.99</s></span></p>
+                    <div class="quantity-container">
+                        <span class="material-symbols-outlined icon" id="shoe-plus">add</span>
+                        <p class="quantity-detail" id="shoe-quantity">1</p>
+                        <span class="material-symbols-outlined icon" id="shoe-minus">remove</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <!-- *|| SHIPPING & TOTAL -->
+            <div class="shipping-total">
+                <p class="word">Shipping</p>
+                <p class="price">$19</p>
+            </div>
+
+            <hr>
+
+            <div class="shipping-total">
+                <p class="word">Total</p>
+                <p class="price" id="total-price">$148.98</p>
+            </div>
+        </div>
+
+        <!-- *|| DETAIL CONTAINER -->
+        <div class="detail-container">
+            <!-- *|| FORM -->
+            <form action="/assests/thankyou.html">
+                <!-- *|| CONTACT INFORMATION-->
+                <label class="sub-heading">Contact information</label>
+                <!-- *|| EMAIL PART -->
+                <label for="email" class="small-letters">E-mail</label>
+                <div class="input-icon">
+                    <span class="material-symbols-outlined ab-icon">mail</span>
+                    <input type="email" name="email-field" id="email" class="input-style"
+                        placeholder="Enter your email..." required>
+                </div>
+                <!-- *|| PHONE PART -->
+                <label for="phone" class="small-letters">Phone</label>
+                <div class="input-icon">
+                    <span class="material-symbols-outlined ab-icon">phone</span>
+                    <input type="number" name="phone-number-field" id="phone" class="input-style"
+                        placeholder="Enter your phone number..." required>
+                </div>
+
+                <!-- *|| SHIPPING ADDRESS -->
+                <label class="sub-heading">Shipping address</label>
+                <!-- *|| FULL NAME PART -->
+                <label for="fullname" class="small-letters">Full name</label>
+                <div class="input-icon">
+                    <span class="material-symbols-outlined ab-icon">account_circle</span>
+                    <input type="text" name="name-field" id="fullname" class="input-style" placeholder="Rodney Cotton" required>
+                </div>
+                <!-- *|| ADDRESS PART -->
+                <label for="address" class="small-letters">Address</label>
+                <div class="input-icon">
+                    <span class="material-symbols-outlined ab-icon">home</span>
+                    <input type="text" name="address-field" id="address" class="input-style"
+                        placeholder="Your address..." required>
+                </div>
+                <!-- *|| CITY PART-->
+                <label for="city" class="small-letters">City</label>
+                <div class="input-icon">
+                    <span class="material-symbols-outlined ab-icon">apartment</span>
+                    <input type="text" name="city-field" id="city" class="input-style" placeholder="Your city..." required>
+                </div>
+                <!-- *|| COUNTRY & POSTAL CODE PART-->
+                <div class="country-code">
+                    <!-- *|| COUNTRY PART -->
+                    <div class="country">
+                        <label for="country" class="small-letters">Country</label>
+                        <div class="input-icon">
+                            <span class="material-symbols-outlined ab-icon">apartment</span>
+                            <select id="country-list" class="input-style" required>
+                                <option class="style" value="Your country">Your Country...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- * || POSTAL CODE PART -->
+                    <div class="code">
+                        <label for="postal-code" class="small-letters">Postal code</label>
+                        <div class="input-icon">
+                            <span class="material-symbols-outlined ab-icon">markunread_mailbox</span>
+                            <input type="number" name="postal-code-field" id="postal-code" class="input-style"
+                                placeholder="Your postal code..." required>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="save-information" id="save-info">
+                    <label for="save-info" class="small-letters center">Save this information for next time</label>
+                </div>
+                <input type="submit" id="submit" value="Continue">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer">created by <a href="https://github.com/kannan-ravi" class="profile-link">Kannan</a> - devChallenges.io</p>
+    </footer>
+    <script type="module" src="assests/script.js"></script>
+</body>
+
+</html>
