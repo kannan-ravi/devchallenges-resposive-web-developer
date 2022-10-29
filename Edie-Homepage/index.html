@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edie Homepage | devChallenges.io</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assests/style.css">
+</head>
+<body>
+    <header class="heading">
+        <navbar class="navbar">
+            <p class="logo">Edie</p>
+            <ul class="unordered-list">
+                <li class="list"><a href="#home" class="link">Home</a></li>
+                <li class="list"><a href="#services" class="link">Services</a></li>
+                <li class="list"><a href="#our-works" class="link">Our Works</a></li>
+                <li class="list"><a href="#clients" class="link">Clients</a></li>
+                <li class="list"><a href="#contact" class="link">Contact</a></li>
+            </ul>
+        </navbar>
+        <div class="hamburger-div">
+            <div class="hamburger-menu"></div>
+            <div class="hamburger-menu"></div>
+            <div class="hamburger-menu"></div>
+        </div>
+    </header>
+    <section class="hero" id="home">
+        <p class="blue-text left">Unhappy with your website?</p>
+
+        <h2 class="sub-heading left">We create beautiful and fast web services</h2>
+
+        <img src="src/heroImage.jpg" class="hero-img" alt="Hero-image">
+
+        <h2 class="sub-heading left">Story, emotion and purpose</h2>
+
+        <p class="light-description left">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+
+        <p class="small-letters left">Want us to contact you?</p>
+
+        <form class="join-input left">
+            <div class="form-container">
+                <input type="email" name="contact-email" id="email" class="email" placeholder="Email" required>
+                <button class="join-button">Join</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- *|| FEATURES PART -->
+    <section class="features" id="services">
+        <h2 class="sub-heading-two left">We offer high demand services </h2>
+        <div class="features-container">
+            <div class="sub-feature-container">
+                <span class="material-symbols-outlined icon-set-one">edit</span>
+                <h3 class="features-heading">UI/UX Design</h3>
+                <p class="features-team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                <a class="features-button" href="#">Get started</a>
+            </div>
+
+            <div class="sub-feature-container">
+                <span class="material-symbols-outlined icon-set-one green-background">code</span>
+                <h3 class="features-heading">Front End</h3>
+                <p class="features-team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                <a class="features-button" href="#">Get started</a>
+            </div>
+
+            <div class="sub-feature-container">
+                <span class="material-symbols-outlined icon-set-one coral-background">storage</span>
+                <h3 class="features-heading">Back End</h3>
+                <p class="features-team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                <a class="features-button" href="#">Get started</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- *|| OUR WORKS SECTION -->
+    <section class="projects" id="our-works">
+        <h2 class="sub-heading-two left">Good design means good business</h2>
+        <!-- *|| GRID CONTAINER FOR PROJECTS -->
+        <div class="grid-container">
+            <!-- *|| CONTAINER FOR SMART HOME DASHBOARD PROJECT -->
+            <div class="sub-grid">
+                <img src="src/smarthome.jpg" alt="Smart home dashboard" class="grid-image">
+                <p class="little-text">Full stack application</p>
+                <p class="project-title">Smart home dashboard</p>
+            </div>
+
+            <!-- *|| CONTAINER FOR ONBOARD APPLICATION -->
+            <div class="sub-grid">
+                <img src="src/onboard.png" alt="Onboard Application" class="grid-image">
+                <p class="little-text">UX/UI design</p>
+                <p class="project-title">Onboard application</p>
+            </div>
+
+            <!-- *|| CONTAINER FOR BOOKING SYSTEM -->
+            <div class="sub-grid">
+                <img src="src/booking.png" alt="Booking System" class="grid-image">
+                <p class="little-text">Mobile application</p>
+                <p class="project-title">Booking system</p>
+            </div>
+
+            <!-- *|| CONTAINER FOR JUICE PRODUCT HOMEPAGE -->
+            <div class="sub-grid last-sub-grid">
+                <img src="src/juice-product.png" alt="Juice Product Homepage" class="grid-image">
+                <p class="little-text">Front End Application</p>
+                <p class="project-title">Juice product homepage</p>
+                <div class="more-arrow-container">
+                    <p class="see-more">see more</p>
+                    <span class="material-symbols-outlined">trending_flat</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="meet-the-team">
+        <div class="team-sub-container team-one">
+            <p class="red-team">Meet the team</p>
+            <p class="team-heading">We are chilled and a laidback team</p>
+            <p class="features-team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="team-sub-container team-two">
+            <img src="src/person1.png" alt="Handsome-Black-Dress-Guy" class="person-1">
+            <img src="src/person2.png" alt="Handsome-Speck-Guy" class="person-2">
+            <img src="src/person3.png" alt="Cute-and-Pretty-Blonde Girl" class="person-3">
+        </div>
+    </section>
+
+    <section class="clients" id="clients">
+        <p class="clients-word">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</p>
+        <div class="client-profile-container">
+            <img src="src/person4.png" alt="Client-Picture" class="client-pic">
+            <div class="client-details">
+                <p class="client-name">Carlos Tran</p>
+                <p class="client-project">The Decorate Gatsby</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- *|| FOOTER OR CONTACT US SECTION -->
+    <footer id="contact">
+        <div class="footer-container">
+            <ul>
+                <li class="footer-list"><a href="#home" class="footer-link">Home</a></li>
+                <li class="footer-list"><a href="#services" class="footer-link">Services</a></li>
+                <li class="footer-list"><a href="#our-works" class="footer-link">Our Works</a></li>
+                <li class="footer-list"><a href="#clients" class="footer-link">Clients</a></li>
+                <li class="footer-list"><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+            <div class="social-link-container">
+                <p class="footer-logo">Edie</p>
+                
+                <img src="src/instagram.svg" alt="Instagram-logo" class="social-icon">
+                <img src="src/linkedin.svg" alt="Linked-logo" class="social-icon">
+                <img src="src/twitter.svg" alt="Twitter-logo" class="social-icon">
+                
+            </div>
+
+            <form class="join-input">
+                <div class="form-container">
+                    <input type="email" name="contact-email" id="email" class="email" placeholder="Email" required>
+                    <button class="join-button">Join</button>
+                </div>
+            </form>
+        </div>
+
+        <p class="created-by">created by <a href="https://github.com/kannan-ravi">Kannan</a> - devChallenges.io</p>
+    </footer>
+    <script src="assests/script.js"></script>
+</body>
+</html>
+
+<!-- <span class="material-symbols-outlined">
+code
+</span> -->
+
+<!-- <span class="material-symbols-outlined">
+storage
+</span> -->
